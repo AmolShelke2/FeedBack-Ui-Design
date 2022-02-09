@@ -4,7 +4,7 @@ const sendBtn = document.querySelector("#send");
 const panel = document.querySelector("#panel");
 let selectedRating = "satisfied";
 
-ratings.addEventListener("click", function (e) {
+ratingsContainer.addEventListener("click", function (e) {
   if (
     e.target.parentNode.classList.contains("rating") &&
     e.target.nextelementSibling
@@ -21,6 +21,17 @@ ratings.addEventListener("click", function (e) {
     e.target.parentNode.classList.add("active");
     selectedRating = e.target.innerHTML;
   }
+});
+
+sendBtn.addEventListener("click", function (e) {
+  panel.innerHTML = `
+     
+    <i class="fas fa-heart"></i>
+    <strong>Thank you</strong>
+    <br>
+    <strong>FeedBack:${selectedRating}</strong>
+    <p>We'll User your feedback to improve our customer support</p>
+    `;
 });
 
 function removeActive() {
