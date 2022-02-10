@@ -10,8 +10,7 @@ So Today I created a Very Nice Looking FeedBack UI Design like an review app usi
 
 
 ## Live Project
-- [Feed back UI](feedback-ui-omega.vercel.app
-)
+- [Feed back UI](https://feedback-ui-omega.vercel.app/)
 
 
 ## Demo 
